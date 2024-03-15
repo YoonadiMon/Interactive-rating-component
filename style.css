@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+body {
+  background: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+/* card */
+main {
+  width: 35%;
+}
+#RatingCard {
+  background: linear-gradient(200deg, rgba(30,37,47,1) 0%, rgba(30,37,47,1) 50%, rgba(22,30,42,1) 100%);
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* fonts */
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+}
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* spacing */
+.spacingInCard, main {
+  margin-bottom: 25px;
+}
+
+/* card items */
+#RatingCard img {
+  background: hsla(217, 12%, 63%, 0.07);
+  padding: 10px;
+  border-radius: 50%;
+}
+#sumit {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.2rem;
+  border: none;
+  width: 100%;
+  height: 3rem;
+  border-radius: 20px;
+
+}
+#sumit:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+#ratings {
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: auto; */
+  display: flex;
+  justify-content: space-between;
+}
+#ratings button {
+  background: hsla(217, 12%, 63%, 0.07);
+  padding: 15px;
+  border-radius: 50%;
+  border: none;
+  color: hsl(217, 12%, 63%);
+  height: 3.8rem;
+  width: 3.8rem;
+}
+#ratings button:hover, #ratings button:focus {
+
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+#ratings button:hover {
+  background: hsl(25, 97%, 53%);
+}
+#ratings button:focus {
+  background: hsl(216, 12%, 54%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
