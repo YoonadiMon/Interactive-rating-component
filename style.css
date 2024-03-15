@@ -28,6 +28,7 @@ main {
 h1 {
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
+  font-weight: 700;
 }
 p {
   color: hsl(217, 12%, 63%);
@@ -46,21 +47,7 @@ p {
   padding: 10px;
   border-radius: 50%;
 }
-#sumit {
-  background: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
-  letter-spacing: 0.2rem;
-  border: none;
-  width: 100%;
-  height: 3rem;
-  border-radius: 20px;
 
-}
-#sumit:hover {
-  background: hsl(0, 0%, 100%);
-  color: hsl(25, 97%, 53%);
-  cursor: pointer;
-}
 #ratings {
   /* display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -88,6 +75,22 @@ p {
   background: hsl(216, 12%, 54%);
 }
 
+#sumit {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.2rem;
+  border: none;
+  width: 100%;
+  height: 3rem;
+  border-radius: 20px;
+  font-weight: 400;
+}
+#sumit:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
 /* thank you card items */
 #thankyouCard {
   display: flex;
@@ -108,3 +111,39 @@ p {
 
 .attribution { font-size: 11px; text-align: center; color: white; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width:500px) {
+  main {
+    width: 90%;
+  }
+  #RatingCard, #thankyouCard {
+    width: 90%;
+    padding: 20px;
+  }
+  /* fonts */
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  /* spacing */
+  .spacingInCard, main {
+    margin-bottom: 20px;
+  }
+
+  #ratings button {
+    padding: 10px;
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+  #sumit {
+    letter-spacing: 0.1rem;
+    width: 100%;
+    height: 2.5rem;
+  }
+}
