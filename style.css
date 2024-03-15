@@ -17,7 +17,7 @@ body {
 main {
   width: 35%;
 }
-#RatingCard {
+#RatingCard, #thankyouCard {
   background: linear-gradient(200deg, rgba(30,37,47,1) 0%, rgba(30,37,47,1) 50%, rgba(22,30,42,1) 100%);
   width: 100%;
   padding: 30px;
@@ -41,7 +41,7 @@ p {
 }
 
 /* card items */
-#RatingCard img {
+#icon-star {
   background: hsla(217, 12%, 63%, 0.07);
   padding: 10px;
   border-radius: 50%;
@@ -78,7 +78,6 @@ p {
   width: 3.8rem;
 }
 #ratings button:hover, #ratings button:focus {
-
   cursor: pointer;
   color: hsl(0, 0%, 100%);
 }
@@ -87,6 +86,23 @@ p {
 }
 #ratings button:focus {
   background: hsl(216, 12%, 54%);
+}
+
+/* thank you card items */
+#thankyouCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#userRating {
+  background: hsla(217, 12%, 63%, 0.1);
+  padding: 15px;
+  border-radius: 30px;
+  color: hsl(25, 97%, 53%);
+  width: fit-content;
+}
+#thankyouCard p {
+  text-align: center;
 }
 
 
